@@ -1,0 +1,280 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "PT Sans", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 1040px;
+  height: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 120px;
+}
+
+.header__box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-area-img {
+  margin-right: 20px;
+}
+
+.header__logo-area-text {
+  color: #31333e;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -2.1px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list ul {
+  display: flex;
+}
+
+.nav__item {
+  margin-right: 44px;
+  position: relative;
+}
+
+.nav__item::after {
+  content: '|';
+  color: #626262;
+  position: absolute;
+  top: 0;
+  right: -22px;
+}
+
+.nav__item:last-child {
+  margin: 0;
+}
+
+.nav__item:last-child::after {
+  content: '';
+}
+
+.nav__link {
+  color: #626262;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.nav__link._current {
+  color: #00aeff;
+}
+
+.nav__link:hover {
+  color: #00aeff;
+  text-decoration: underline;
+}
+
+.nav__form {
+  margin-left: 64px;
+  position: relative;
+}
+
+.nav__form-search {
+  width: 130px;
+  height: 30px;
+  background-color: #f1f3f6;
+  padding-left: 8px;
+}
+
+.nav__form-search::placeholder {
+  color: #a3a3a3;
+  font-size: 15px;
+}
+
+.main {
+  height: 670px;
+  padding-top: 180px;
+  background-color: #31333e;
+}
+
+.main__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 82px;
+}
+
+.main__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__showcase {
+  height: 370px;
+  position: relative;
+}
+
+.main__showcase-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #31333e;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main__showcase-item-desktop {
+  height: 100%;
+  font-size: 45px;
+  background: url("../img/desktop.png") center/contain no-repeat;
+}
+
+.main__showcase-item-desktop span {
+  width: 270px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.main__showcase-item-phone {
+  height: 311px;
+  background: url("../img/phone.png") center/contain no-repeat;
+  position: absolute;
+  bottom: -40px;
+  left: 164px;
+}
+
+.more {
+  padding: 100px 0 70px 0;
+}
+
+.more__box {
+  display: flex;
+  justify-content: space-between;
+  margin: -15px;
+}
+
+.more__item {
+  margin: 15px;
+}
+
+.title {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.button {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  background-color: #00aeff;
+  border: transparent;
+  border-radius: 6px;
+  width: 220px;
+  height: 60px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  transition: 0.3s;
+  color: #00aeff;
+  border: 1px solid #00aeff;
+  background-color: #31333e;
+}
