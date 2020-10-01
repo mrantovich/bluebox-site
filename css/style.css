@@ -578,6 +578,14 @@ body {
   object-fit: fill;
 }
 
+.clients {
+  padding: 36px 0 80px 0;
+}
+
+.clients__head {
+  margin-bottom: 48px;
+}
+
 .title {
   color: #fff;
   font-size: 45px;

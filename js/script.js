@@ -14,4 +14,7 @@ $(document).ready(function(){
 		$('.header__nav').toggleClass('_active');
 	});
 
+	$('.clients__slider').slick({
+	});
+
 });
