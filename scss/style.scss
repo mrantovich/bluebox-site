@@ -487,17 +487,67 @@ body {
 	}
 
 	&__slider {
+		display: flex;
+		position: relative;
+		padding: 0 60px;
+		& .slick-arrow {
+			position: absolute;
+			top: 50%;
+			margin-top: -20px;
+			z-index: 8;
+			font-size: 0;
+			width: 24px;
+			height: 40px;
+
+			&.slick-prev {
+				left: 0;
+				background: url('../img/clients/arrow-left.svg') 0 0 / 100% no-repeat;
+			}
+			&.slick-next {
+				right: 0;
+				background: url('../img/clients/arrow-right.svg') 0 0 / 100% no-repeat;
+			}
+		}
+	}
+
+	&__slider-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }
 
+.slick-list {
+	overflow: hidden;
+}
+
+.slick-track {
+	display: flex;
+}
+
 .footer {
-	height: 210px;
+	min-height: 210px;
 	background-color: $color-dark;
 	color: #e2e7ed;
+	font-size: 15px;
+	padding-top: 45px;
+	@media (max-width: 992px) {
+		padding-bottom: 45px;
+	}
 
 	&__box {
 		display: grid;
 		grid-template: 1fr 1fr / 1fr 1fr;
+		row-gap: 36px;
+
+		@media (max-width: 992px) {
+			grid-template: repeat(3, 1fr) / 1fr;
+			justify-items: center;
+			row-gap: 26px;
+		}
+		@media (max-width: 520px) {
+			grid-template: 1fr 50px 50px / 1fr;
+		}
 	}
 
 	&__menu {
@@ -508,11 +558,20 @@ body {
 	&__socials {
 		grid-row: 1 / 2;
 		grid-column: 2 / 3;
+
+		@media (max-width: 992px) {
+			grid-row: 3 / 4;
+			grid-column: 1 / 2;
+		}
 	}
 
 	&__disclaimer {
 		grid-row: 2 / 3;
 		grid-column: 1 / 2;
+		font-size: 12px;
+		@media (max-width: 992px) {
+			text-align: center;
+		}
 	}
 }
 
@@ -520,12 +579,56 @@ body {
 
 	&__list {
 		display: flex;
+		margin-bottom: 10px;
+		@media (max-width: 992px) {
+			justify-content: center;
+		}
+		@media (max-width: 520px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__item {
+		margin-right: 36px;
+		position: relative;
+		&::after {
+			content: '|';
+			position: absolute;
+			top: 0;
+			right: -18px;
+		}
+		&:last-child {
+			margin: 0;
+			&::after {
+				content: '';
+			}
+		}
+		@media (max-width: 520px) {
+			margin-right: 0;
+			margin-bottom: 10px;
+			font-size: 24px;
+			&::after {
+				content: '';
+			}
+			&:last-child {
+				margin-bottom: 26px;
+			}
+		}
 	}
 
 	&__link {
+		color: #e2e7ed;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 
 	&__copy {
+		@media (max-width: 992px) {
+			text-align: center;
+		}
 	}
 }
 
@@ -533,6 +636,18 @@ body {
 
 	&__list {
 		display: flex;
+		justify-content: flex-end;
+
+		@media (max-width: 992px) {
+			justify-content: center;
+		}
+	}
+
+	&__item {
+		margin-left: 10px;
+		&:first-child {
+			margin: 0;
+		}
 	}
 
 	&__link {
