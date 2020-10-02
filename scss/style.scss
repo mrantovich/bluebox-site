@@ -490,6 +490,56 @@ body {
 	}
 }
 
+.footer {
+	height: 210px;
+	background-color: $color-dark;
+	color: #e2e7ed;
+
+	&__box {
+		display: grid;
+		grid-template: 1fr 1fr / 1fr 1fr;
+	}
+
+	&__menu {
+		grid-row: 1 / 2;
+		grid-column: 1 / 2;
+	}
+
+	&__socials {
+		grid-row: 1 / 2;
+		grid-column: 2 / 3;
+	}
+
+	&__disclaimer {
+		grid-row: 2 / 3;
+		grid-column: 1 / 2;
+	}
+}
+
+.menu {
+
+	&__list {
+		display: flex;
+	}
+
+	&__link {
+	}
+
+	&__copy {
+	}
+}
+
+.socials {
+
+	&__list {
+		display: flex;
+	}
+
+	&__link {
+	}
+}
+
+
 .title {
 	color: #fff;
 	font-size: 45px;
