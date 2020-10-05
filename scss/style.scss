@@ -243,6 +243,7 @@ body {
 
 		@media (max-width: 992px) {
 			flex-direction: column;
+			margin-bottom: 32px;
 		}
 	}
 
@@ -261,12 +262,15 @@ body {
 
 	&__showcase {
 		height: 370px;
-		position: relative;
 		z-index: 1;
 
-		@media (max-width: 992px) {
-			height: 270px;
-		}
+	}
+
+	&__showcase-items {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		position: relative;
 	}
 
 	&__showcase-item {
@@ -280,6 +284,7 @@ body {
 	}
 
 	&__showcase-item-desktop {
+		width: 70%;
 		height: 100%;
 		font-size: 45px;
 		background: url('../img/desktop.png') center / contain no-repeat;
@@ -293,13 +298,28 @@ body {
 
 	&__showcase-item-phone {
 		height: 311px;
-		background: url('../img/phone.png') center / contain no-repeat;
+		background: url('../img/phone.png') 0 0 / contain no-repeat;
 		position: absolute;
 		bottom: -40px;
-		left: 10%;
+		left: 16%;
+		width: 100%;
+
+		& span {
+			width: 95px;
+			position: absolute;
+			bottom: 140px;
+			left: 6%;
+			text-align: center;
+		}
 
 		@media (max-width: 992px) {
-			height: 211px;
+			height: 180px;
+			bottom: 0;
+		}
+		@media (max-width: 840px) {
+			height: 150px;
+			bottom: 32px;
+			left: 14%;
 		}
 
 	}

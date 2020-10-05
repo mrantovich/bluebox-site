@@ -325,6 +325,7 @@ body {
 @media (max-width: 992px) {
   .main__top {
     flex-direction: column;
+    margin-bottom: 32px;
   }
 }
 
@@ -343,14 +344,14 @@ body {
 
 .main__showcase {
   height: 370px;
-  position: relative;
   z-index: 1;
 }
 
-@media (max-width: 992px) {
-  .main__showcase {
-    height: 270px;
-  }
+.main__showcase-items {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 .main__showcase-item {
@@ -364,6 +365,7 @@ body {
 }
 
 .main__showcase-item-desktop {
+  width: 70%;
   height: 100%;
   font-size: 45px;
   background: url("../img/desktop.png") center/contain no-repeat;
@@ -377,15 +379,33 @@ body {
 
 .main__showcase-item-phone {
   height: 311px;
-  background: url("../img/phone.png") center/contain no-repeat;
+  background: url("../img/phone.png") 0 0/contain no-repeat;
   position: absolute;
   bottom: -40px;
-  left: 10%;
+  left: 16%;
+  width: 100%;
+}
+
+.main__showcase-item-phone span {
+  width: 95px;
+  position: absolute;
+  bottom: 140px;
+  left: 6%;
+  text-align: center;
 }
 
 @media (max-width: 992px) {
   .main__showcase-item-phone {
-    height: 211px;
+    height: 180px;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 840px) {
+  .main__showcase-item-phone {
+    height: 150px;
+    bottom: 32px;
+    left: 14%;
   }
 }
 
