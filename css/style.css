@@ -800,6 +800,39 @@ body {
   }
 }
 
+.portfolio-popup {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.portfolio-popup__top {
+  padding: 55px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #31333e;
+}
+
+.portfolio-popup__title {
+  margin-bottom: 15px;
+}
+
+.portfolio-popup__text {
+  max-width: 690px;
+  margin-bottom: 40px;
+  line-height: 25.94px;
+  text-align: center;
+}
+
+.portfolio-popup__pic img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .footer {
   min-height: 210px;
   background-color: #31333e;
@@ -955,10 +988,22 @@ body {
   font-weight: 400;
 }
 
+.title_b {
+  color: #000;
+}
+
+.title_d {
+  color: #31333e;
+}
+
 @media (max-width: 767px) {
   .title {
     font-size: 35px;
   }
+}
+
+.text {
+  font-size: 15px;
 }
 
 .head {
