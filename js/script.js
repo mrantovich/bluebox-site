@@ -48,4 +48,8 @@ $(document).ready(function(){
 			]
 	});
 
+	$('a[href*="#"]').smoothscroll({
+		duration:  500
+		});
+
 });
