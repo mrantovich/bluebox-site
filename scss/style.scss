@@ -263,6 +263,10 @@ body {
 		height: 370px;
 		position: relative;
 		z-index: 1;
+
+		@media (max-width: 992px) {
+			height: 270px;
+		}
 	}
 
 	&__showcase-item {
@@ -292,7 +296,11 @@ body {
 		background: url('../img/phone.png') center / contain no-repeat;
 		position: absolute;
 		bottom: -40px;
-		left: 164px;
+		left: 10%;
+
+		@media (max-width: 992px) {
+			height: 211px;
+		}
 
 	}
 }

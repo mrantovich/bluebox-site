@@ -347,6 +347,12 @@ body {
   z-index: 1;
 }
 
+@media (max-width: 992px) {
+  .main__showcase {
+    height: 270px;
+  }
+}
+
 .main__showcase-item {
   display: flex;
   align-items: center;
@@ -374,7 +380,13 @@ body {
   background: url("../img/phone.png") center/contain no-repeat;
   position: absolute;
   bottom: -40px;
-  left: 164px;
+  left: 10%;
+}
+
+@media (max-width: 992px) {
+  .main__showcase-item-phone {
+    height: 211px;
+  }
 }
 
 .more {
