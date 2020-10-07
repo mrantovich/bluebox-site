@@ -620,8 +620,6 @@ body {
 	}
 
 	&__text {
-		color: $color-light;
-		font-size: 45px;
 		margin-right: 75px;
 
 		@media (max-width: 767px) {
@@ -772,6 +770,97 @@ body {
 		}
 	}
 }
+
+.touch {
+	margin-top: 120px;
+	height: 110px;
+	background-color: $color-gray-bg;
+	color: $color-light;
+
+	&__top {
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+}
+
+
+.contact {
+	padding: 60px 0 90px 0;
+
+	&__box {
+		display: flex;
+		margin: 0 -15px;
+	}
+
+	&__form {
+		flex-basis: 50%;
+		margin: 0 15px;
+	}
+
+	&__location {
+		flex-basis: 50%;
+		margin: 0 15px;
+	}
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	color: #2a2e39;
+
+	&__disclaimer {
+		margin-bottom: 60px;
+		font-size: 15px;
+		line-height: 26px;
+	}
+
+	&__label {	
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+
+	&__input {
+		width: 420px;
+		height: 40px;
+		border: 1px solid rgba(0, 0, 1, 0.15);
+		margin-bottom: 20px;
+		&-area {
+			width: 420px;
+			height: 190px;
+			margin-bottom: 40px;
+			border: 1px solid rgba(0, 0, 1, 0.15);
+		}
+	}
+
+	&__button {
+	}
+}
+
+.location {
+
+	&__title {
+	}
+
+	&__map {
+	}
+
+	&__address {
+	}
+}
+
+.address {
+
+	&__title {
+	}
+
+	&__text {
+	}
+
+	&__link {
+	}
+}
+
 
 .footer {
 	min-height: 210px;
@@ -924,6 +1013,12 @@ body {
 .text {
 	font-size: 15px;
 }
+
+.stext {
+	color: $color-light;
+	font-size: 45px;
+}
+
 
 .head {
 	color: $color-light;

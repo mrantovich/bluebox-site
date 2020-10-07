@@ -741,8 +741,6 @@ body {
 }
 
 .see__text {
-  color: #626262;
-  font-size: 45px;
   margin-right: 75px;
 }
 
@@ -908,6 +906,69 @@ body {
 .portfolio-popup__pic img {
   width: 100%;
   object-fit: cover;
+}
+
+.touch {
+  margin-top: 120px;
+  height: 110px;
+  background-color: #e2e7ed;
+  color: #626262;
+}
+
+.touch__top {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contact {
+  padding: 60px 0 90px 0;
+}
+
+.contact__box {
+  display: flex;
+  margin: 0 -15px;
+}
+
+.contact__form {
+  flex-basis: 50%;
+  margin: 0 15px;
+}
+
+.contact__location {
+  flex-basis: 50%;
+  margin: 0 15px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  color: #2a2e39;
+}
+
+.form__disclaimer {
+  margin-bottom: 60px;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.form__label {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.form__input {
+  width: 420px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 1, 0.15);
+  margin-bottom: 20px;
+}
+
+.form__input-area {
+  width: 420px;
+  height: 190px;
+  margin-bottom: 40px;
+  border: 1px solid rgba(0, 0, 1, 0.15);
 }
 
 .footer {
@@ -1081,6 +1142,11 @@ body {
 
 .text {
   font-size: 15px;
+}
+
+.stext {
+  color: #626262;
+  font-size: 45px;
 }
 
 .head {
